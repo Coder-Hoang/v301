@@ -1,0 +1,250 @@
+body {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-txt {
+    color: white;
+    margin-left: 20px;
+}
+
+.main-web-txt {
+    margin-right: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.main-web-txt-a{
+    color: white;
+    text-decoration: none;
+}
+
+/*               Codelab             */
+
+.codelab-faq {
+  margin-bottom: 1rem;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.codelab-faq h3 {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.codelab-answer {
+  max-height: 0; 
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  font-size: 30px;
+}
+
+.codelab-answer p{
+    font-size: 20px;
+}
+
+.codelab-faq.active .codelab-answer {
+  max-height: 100vh; 
+}
+
+/*               Returns             */
+
+.return-faq {
+  margin-bottom: 1rem;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.return-faq h3 {
+  cursor: pointer;
+  font-size: 40px;
+}
+
+.underline {
+    height: 5px;
+    background-color: black;
+}
+
+.return-answer {
+  max-height: 0; 
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  font-size: 30px;
+}
+
+.return-answer p{
+    font-size: 20px;
+}
+
+.return-faq.active .return-answer {
+  max-height: 100vh; 
+}
+
+/*               Membership             */
+
+.membership-faq {
+    margin-bottom: 1rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.membership-faq h3 {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.membership-answer {
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 30px;
+}
+
+.membership-answer p{
+    font-size: 20px;
+}
+
+.membership-faq.active .membership-answer {
+    max-height: 100vh; 
+}
+
+/*                 Gifting            */
+
+.gifting-faq {
+    margin-bottom: 1rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.gifting-faq h3 {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.gifting-answer {
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 30px;
+}
+
+.gifting-answer p{
+    font-size: 20px;
+}
+
+.gifting-faq.active .gifting-answer {
+    max-height: 100vh; 
+}
+
+/*                 Courses               */
+.courses-faq {
+    margin-bottom: 1rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.courses-faq h3 {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.courses-answer {
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 30px;
+}
+
+.courses-answer p{
+    font-size: 20px;
+}
+
+.courses-faq.active .courses-answer {
+    max-height: 100vh; 
+}
+
+/*                  Credit Card                  */
+.payment-faq {
+    margin-bottom: 1rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.payment-faq h3 {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.payment-answer {
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 30px;
+}
+
+.payment-answer p{
+    font-size: 20px;
+}
+
+.payment-faq.active .payment-answer {
+    max-height: 100vh; 
+}
+
+/*                    Tax                 */
+.tax-faq {
+    margin-bottom: 1rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.tax-faq h3 {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.tax-answer {
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 30px;
+}
+
+.tax-answer p{
+    font-size: 20px;
+}
+
+.tax-faq.active .tax-answer {
+    max-height: 100vh; 
+}
+
+/*                   Age                   */
+.age-faq {
+    margin-bottom: 1rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.age-faq h3 {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.age-answer {
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    font-size: 30px;
+}
+
+.age-answer p{
+    font-size: 20px;
+}
+
+.age-faq.active .age-answer {
+    max-height: 100vh; 
+}

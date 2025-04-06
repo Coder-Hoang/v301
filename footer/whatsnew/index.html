@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLab Courses FAQ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="footer">
+        <h1 class="footer-txt">CodeLab What's New</h1>
+        <a href="../../index.html" class="main-web-txt-a"><h2 class="main-web-txt">Main Website</h2></a>
+    </div>
+
+    <!----------------------------------------Codelab------------------------------------------>
+    <h3 style="font-size: 40px; margin-left: 15%;">Version 3.0.0</h3>
+    <div class="underline" style="margin-left: 10%; width: 80%;"></div>
+    <div class="codelab-faq">
+        <h3>A website redesign</h3> 
+        <div class="codelab-answer">
+          <h4>By redesigning the Coder Hoang website version 2.0.0 to the Coder Hoang (CodeLab) website version 3.0.0, we have ensure these things</h4>
+          <br>
+          1. A better looks and feels for the website, by choosing a better background color, better text color.
+          <br>
+          2. A better user experience, by making the website more responsive and easier to navigate.
+          <br>
+          3. Cool animations from uiverse.io
+          <br>
+          And more...
+        </div>
+        <div class="underline"></div> 
+      </div>
+
+    <!---
+
+    <div class="return-faq">
+        <h3>How do I return a course(s)?</h3>
+        <div class="return-answer">
+          <h4>Although we don't have a return button on our website, but if you want to return the course(s) please email coder.hoang+returns@gmail.com. Please type all the character correctly to avoid scamers.
+          </h4>
+          <p>*Items are eligible for returns within 7 days of purchase by the email dates and purchased dates, and will come with Paypal fees.</p>
+        </div>
+        <div class="underline"></div> 
+    </div>
+
+
+    <div class="membership-faq">
+        <h3>What are the membership benefits?</h3> 
+        <div class="membership-answer">
+          <h4>We offers alot of membership, depending on what you like, if you like creating game, Game Membership might be good for you.
+            Although we have all different membership, it is very easy to understand. All membership include these rules.
+            <br>
+            ✔ We are going to send you a notice email to your email whenever there is any news on either our channel or our website about your topics.
+            <br>
+            ✔ All membership will get every courses in the topics that you choose until you cancel your membership. For example, if you chose games, we are going to open every courses that include games like making games in Godot, Unity, etc (also, membership is going to have everything that is included in the content above for your topics^).
+            <br>
+            ✔ All membership will get an email links to the new website redesign earlier than the public.
+            <br>
+            ✔ All membership will get an email to an unlisted videos whenever there is a blooket game, you can go join us!
+          </h4>
+
+          <p>* All membership can not be cancel until the subscription ends, if you have question, please email coder.hoang+members@gmail.com for more details.
+            <br>
+            ^ except lifetime access, condition apply, if membership is not cancelled.
+          </p>
+        </div>
+        <div class="underline"></div> 
+    </div>
+
+
+    <div class="gifting-faq">
+        <h3>Can I gift a CodeLab membership/course to a friend/family</h3> 
+        <div class="gifting-answer">
+          <h4>Unfortunately no, (for now), but we are working on it, when the version is out, we will annouce it on our channel, however, you can try emailing
+            coder.hoang+gift@gmail.com and maybe we can figure it out before the big update, but no promisess.
+          </h4>
+        </div>
+        <div class="underline"></div> 
+    </div>
+
+    <div class="courses-faq">
+        <h3>What are the courses benefit?</h3> 
+        <div class="courses-answer">
+          <h4>There is 3 benefit,
+            <br>
+            1. There is a lifetime access to courses
+            <br>
+            2. You get free courses update
+            <br>
+            3. You will get a monthly  game, like the membership
+          </h4>
+        </div>
+        <div class="underline"></div> 
+    </div>
+
+
+    <div class="payment-faq">
+        <h3 id="payment">What payment methods do you accept?</h3> 
+        <div class="payment-answer">
+          <h4>For now, we only accept payment through paypal, but we are working on our own independent payment on our website.</h4>
+          <p>*Palpal accept Visa, Mastercard, American Express, Discover, Diners Club, JCB, UnionPay, Maestro, Carte Bleue</p>
+        </div>
+        <div class="underline"></div> 
+    </div>
+
+    <div class="tax-faq">
+        <h3>How do you calculate sale tax?</h3> 
+        <div class="tax-answer">
+            <h4>Well, taxes are included in courses and memberships price already, in fact, all of the fees are included in the price already.</h4>
+            <p>*Condition apply, unless items are being return, see return policy for more information.</p>
+        </div>
+        <div class="underline"></div> 
+      </div>
+
+    <div class="age-faq">
+        <h3>What age is CodeLab for?</h3> 
+        <div class="age-answer">
+          <h4>Well, there is no real age for CodeLab, as long as you just want to have fun, you are more than welcome to buy a course/membership.</h4>
+        </div>
+        <div class="underline"></div> 
+    </div>
+
+    ->
+
+    <!----------------------------------------JS-------------------------------------------------------->
+
+    <script>
+        const returnFAQs = document.querySelectorAll('.return-faq');
+        const membershipFAQs = document.querySelectorAll('.membership-faq');
+        const codelabFAQs = document.querySelectorAll('.codelab-faq');
+        const giftingFAQs = document.querySelectorAll('.gifting-faq');
+        const coursesFAQs = document.querySelectorAll('.courses-faq');
+        const paymentFAQs = document.querySelectorAll('.payment-faq');
+        const taxFAQs = document.querySelectorAll('.tax-faq');
+        const ageFAQs = document.querySelectorAll('.age-faq');
+
+        returnFAQs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+        });
+
+        membershipFAQs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+        });
+
+        codelabFAQs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+        });
+
+        giftingFAQs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+        });
+
+        coursesFAQs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+        });
+
+        paymentFAQs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+        });
+
+        taxFAQs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+        });
+        ageFAQs.forEach(faq => {
+        faq.addEventListener('click', () => {
+            faq.classList.toggle('active');
+        });
+        });
+    </script>
+
+    </script>
+</body>
+</html>

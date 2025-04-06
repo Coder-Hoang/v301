@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Code Display</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/atom-one-dark.min.css">
+</head>
+
+<body>
+
+    <h1>Rust Code Example</h1>
+    <div class="code-container">
+        <pre><code id="rust-code" class="language-rust">
+pub mod events;
+mod game;
+mod main_menu;
+mod systems;
+
+use game::GamePlugin;
+use main_menu::MainMenuPlugin;
+
+use systems::*;
+
+use bevy::prelude::*;
+
+fn main() {
+    App::new()
+        // Bevy Plugins
+        .add_plugins(DefaultPlugins)
+        .add_state::<AppState>()
+        // My Plugins
+        .add_plugin(MainMenuPlugin)
+        .add_plugin(GamePlugin)
+        // Startup Systems
+        .add_startup_system(spawn_camera)
+        // Systems
+        .add_system(transition_to_game_state)
+        .add_system(transition_to_main_menu_state)
+        .add_system(exit_game)
+        .add_system(handle_game_over)
+        .run();
+}
+
+#[derive(States, Debug, Clone, Copy, Eq, PartialEq, Hash, Default)]
+pub enum AppState {
+    #[default]
+    MainMenu,
+    Game,
+    GameOver,
+}
+        </code></pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <script>
+        // Function to format Rust code
+        function formatRustCode(code) {
+            return code
+                .split('\n')
+                .map(line => line.trim()) // Trim each line
+                .filter(line => line.length > 0) // Remove empty lines
+                .join('\n'); // Join lines back together
+        }
+
+        // Get the Rust code block
+        const rustCodeBlock = document.getElementById('rust-code');
+        const formattedRustCode = formatRustCode(rustCodeBlock.innerText);
+        rustCodeBlock.innerText = formattedRustCode;
+
+        // Highlight the formatted code
+        hljs.highlightBlock(rustCodeBlock);
+    </script>
+</body>
+
+</html>

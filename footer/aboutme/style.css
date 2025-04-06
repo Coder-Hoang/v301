@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(1.jpg);
+}
+
+.footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-txt {
+    color: white;
+    margin-left: 20px;
+}
+
+.main-web-txt {
+    margin-right: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.main-web-txt-a{
+    color: white;
+    text-decoration: none;
+}
+
+.founder-div {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 100px;
+    place-items: center;
+}
+
+.meet-founder-txt {
+    font-size: 80px;
+    color: black
+}
+
+.founder-name {
+    color: black;
+    font-size: 50px;
+}
+
+.founder-info {
+    font-size: 30px;
+}
